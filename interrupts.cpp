@@ -2,10 +2,14 @@
  *
  * @file interrupts.cpp
  * @author Sasisekhar Govind
+ * @author Sohaila Haroun
+ * @author Zaineb Ben Hmida
  *
  */
 
+ 
  #include "interrupts.hpp"
+
  int main(int argc, char** argv) {
  
      //vectors is a C++ std::vector of strings that contain the address of the ISR
