@@ -1,0 +1,125 @@
+0, 75, CPU burst
+75, 1, switch to kernel mode
+76, 10, context saved
+86, 1, find vector 5 in memory position 0x000A
+87, 1, load address 0X048B into the PC
+88, 40, ISR SYSCALL stuff
+128, 40, ISR SYSCALL stuff
+168, 40, ISR SYSCALL stuff
+208, 40, ISR SYSCALL stuff
+248, 40, ISR SYSCALL stuff
+288, 40, ISR SYSCALL stuff
+328, 10, ISR SYSCALL stuff
+338, 1, IRET
+339, 84, CPU burst
+423, 1, switch to kernel mode
+424, 10, context saved
+434, 1, find vector 5 in memory position 0x000A
+435, 1, load address 0X048B into the PC
+436, 40, ISR END_IO stuff
+476, 40, ISR END_IO stuff
+516, 40, ISR END_IO stuff
+556, 40, ISR END_IO stuff
+596, 40, ISR END_IO stuff
+636, 40, ISR END_IO stuff
+676, 10, ISR END_IO stuff
+686, 1, IRET
+687, 22, CPU burst
+709, 1, switch to kernel mode
+710, 10, context saved
+720, 1, find vector 10 in memory position 0x0014
+721, 1, load address 0X07B0 into the PC
+722, 40, ISR SYSCALL stuff
+762, 40, ISR SYSCALL stuff
+802, 40, ISR SYSCALL stuff
+842, 36, ISR SYSCALL stuff
+878, 1, IRET
+879, 80, CPU burst
+959, 1, switch to kernel mode
+960, 10, context saved
+970, 1, find vector 10 in memory position 0x0014
+971, 1, load address 0X07B0 into the PC
+972, 40, ISR END_IO stuff
+1012, 40, ISR END_IO stuff
+1052, 40, ISR END_IO stuff
+1092, 36, ISR END_IO stuff
+1128, 1, IRET
+1129, 79, CPU burst
+1208, 1, switch to kernel mode
+1209, 10, context saved
+1219, 1, find vector 6 in memory position 0x000C
+1220, 1, load address 0X0639 into the PC
+1221, 40, ISR SYSCALL stuff
+1261, 40, ISR SYSCALL stuff
+1301, 40, ISR SYSCALL stuff
+1341, 40, ISR SYSCALL stuff
+1381, 40, ISR SYSCALL stuff
+1421, 11, ISR SYSCALL stuff
+1432, 1, IRET
+1433, 68, CPU burst
+1501, 1, switch to kernel mode
+1502, 10, context saved
+1512, 1, find vector 6 in memory position 0x000C
+1513, 1, load address 0X0639 into the PC
+1514, 40, ISR END_IO stuff
+1554, 40, ISR END_IO stuff
+1594, 40, ISR END_IO stuff
+1634, 40, ISR END_IO stuff
+1674, 40, ISR END_IO stuff
+1714, 11, ISR END_IO stuff
+1725, 1, IRET
+1726, 71, CPU burst
+1797, 1, switch to kernel mode
+1798, 10, context saved
+1808, 1, find vector 4 in memory position 0x0008
+1809, 1, load address 0X0292 into the PC
+1810, 40, ISR SYSCALL stuff
+1850, 40, ISR SYSCALL stuff
+1890, 40, ISR SYSCALL stuff
+1930, 40, ISR SYSCALL stuff
+1970, 40, ISR SYSCALL stuff
+2010, 40, ISR SYSCALL stuff
+2050, 40, ISR SYSCALL stuff
+2090, 20, ISR SYSCALL stuff
+2110, 1, IRET
+2111, 97, CPU burst
+2208, 1, switch to kernel mode
+2209, 10, context saved
+2219, 1, find vector 4 in memory position 0x0008
+2220, 1, load address 0X0292 into the PC
+2221, 40, ISR END_IO stuff
+2261, 40, ISR END_IO stuff
+2301, 40, ISR END_IO stuff
+2341, 40, ISR END_IO stuff
+2381, 40, ISR END_IO stuff
+2421, 40, ISR END_IO stuff
+2461, 40, ISR END_IO stuff
+2501, 20, ISR END_IO stuff
+2521, 1, IRET
+2522, 84, CPU burst
+2606, 1, switch to kernel mode
+2607, 10, context saved
+2617, 1, find vector 7 in memory position 0x000E
+2618, 1, load address 0X00BD into the PC
+2619, 40, ISR SYSCALL stuff
+2659, 40, ISR SYSCALL stuff
+2699, 40, ISR SYSCALL stuff
+2739, 40, ISR SYSCALL stuff
+2779, 40, ISR SYSCALL stuff
+2819, 40, ISR SYSCALL stuff
+2859, 25, ISR SYSCALL stuff
+2884, 1, IRET
+2885, 38, CPU burst
+2923, 1, switch to kernel mode
+2924, 10, context saved
+2934, 1, find vector 7 in memory position 0x000E
+2935, 1, load address 0X00BD into the PC
+2936, 40, ISR END_IO stuff
+2976, 40, ISR END_IO stuff
+3016, 40, ISR END_IO stuff
+3056, 40, ISR END_IO stuff
+3096, 40, ISR END_IO stuff
+3136, 40, ISR END_IO stuff
+3176, 25, ISR END_IO stuff
+3201, 1, IRET
+3202, 90, CPU burst
