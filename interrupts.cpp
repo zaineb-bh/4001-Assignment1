@@ -45,11 +45,11 @@
             execution += execution_history;
             current_time = new_time;
 
-            // ISR Body Execution, I don't get it, each activty 40ms unitl isr done? 
+            // ISR Body Execution, I don't get it, each activty 40ms unitl isr done? for now
             int device_delay = delays[duration_intr-1];
             while (device_delay > 0) {
                 int chunk = std::min(isr_activity_time, device_delay);
-                execution += std::to_string(current_time) + ", " + std::to_string(chunk) + ", ISR SYSCALL stuff\n";
+                execution += std::to_string(current_time) + ", " + std::to_string(chunk) + ", ISR SYSCALL Activity\n";
                 current_time += chunk;
                 device_delay -= chunk;
             }
@@ -63,11 +63,11 @@
             execution += execution_history;
             current_time = new_time;
 
-            // ISR Body Execution, also don't get is it each activty 40ms unitl isr done? again? for now, will ask prof/ta
+            // ISR Body Execution, each activty 40ms unitl isr done
             int device_delay = delays[duration_intr-1];
             while (device_delay > 0) {
                 int chunk = std::min(isr_activity_time, device_delay);
-                execution += std::to_string(current_time) + ", " + std::to_string(chunk) + ", ISR END_IO stuff\n";
+                execution += std::to_string(current_time) + ", " + std::to_string(chunk) + ", ISR END_IO Activity\n";
                 current_time += chunk;
                 device_delay -= chunk;
             }
@@ -86,6 +86,4 @@
      write_output(execution);
  
      return 0;
-     //Testing something
-     //!!!
  }
