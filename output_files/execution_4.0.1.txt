@@ -1,0 +1,70 @@
+0, 95, CPU burst
+95, 1, switch to kernel mode
+96, 10, context saved
+106, 1, find vector 6 in memory position 0x000C
+107, 1, load address 0X0639 into the PC
+108, 74, ISR SYSCALL Activity
+182, 137, ISR SYSCALL Activity
+319, 1, IRET
+320, 26, CPU burst
+346, 1, switch to kernel mode
+347, 10, context saved
+357, 1, find vector 6 in memory position 0x000C
+358, 1, load address 0X0639 into the PC
+359, 98, ISR END_IO Activity
+457, 91, ISR END_IO Activity
+548, 22, ISR END_IO Activity
+570, 1, IRET
+571, 72, CPU burst
+643, 1, switch to kernel mode
+644, 10, context saved
+654, 1, find vector 17 in memory position 0x0022
+655, 1, load address 0X05B3 into the PC
+656, 196, ISR SYSCALL Activity
+852, 148, ISR SYSCALL Activity
+1000, 113, ISR SYSCALL Activity
+1113, 130, ISR SYSCALL Activity
+1243, 169, ISR SYSCALL Activity
+1412, 127, ISR SYSCALL Activity
+1539, 73, ISR SYSCALL Activity
+1612, 1, IRET
+1613, 50, CPU burst
+1663, 1, switch to kernel mode
+1664, 10, context saved
+1674, 1, find vector 17 in memory position 0x0022
+1675, 1, load address 0X05B3 into the PC
+1676, 175, ISR END_IO Activity
+1851, 165, ISR END_IO Activity
+2016, 194, ISR END_IO Activity
+2210, 96, ISR END_IO Activity
+2306, 80, ISR END_IO Activity
+2386, 105, ISR END_IO Activity
+2491, 141, ISR END_IO Activity
+2632, 1, IRET
+2633, 88, CPU burst
+2721, 1, switch to kernel mode
+2722, 10, context saved
+2732, 1, find vector 14 in memory position 0x001C
+2733, 1, load address 0X0165 into the PC
+2734, 42, ISR SYSCALL Activity
+2776, 67, ISR SYSCALL Activity
+2843, 77, ISR SYSCALL Activity
+2920, 196, ISR SYSCALL Activity
+3116, 74, ISR SYSCALL Activity
+3190, 113, ISR SYSCALL Activity
+3303, 51, ISR SYSCALL Activity
+3354, 16, ISR SYSCALL Activity
+3370, 1, IRET
+3371, 31, CPU burst
+3402, 1, switch to kernel mode
+3403, 10, context saved
+3413, 1, find vector 14 in memory position 0x001C
+3414, 1, load address 0X0165 into the PC
+3415, 57, ISR END_IO Activity
+3472, 41, ISR END_IO Activity
+3513, 130, ISR END_IO Activity
+3643, 116, ISR END_IO Activity
+3759, 186, ISR END_IO Activity
+3945, 106, ISR END_IO Activity
+4051, 1, IRET
+4052, 52, CPU burst
