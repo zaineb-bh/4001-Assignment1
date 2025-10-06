@@ -7,7 +7,7 @@
  *
  */
 
- 
+ #include <random>
  #include "interrupts.hpp"
 
  int main(int argc, char** argv) {
@@ -45,10 +45,15 @@
             execution += execution_history;
             current_time = new_time;
 
-            // ISR Body Execution, I don't get it, each activty 40ms unitl isr done? for now
+                        // ISR Body Execution, each activty between 40ms-200ms unitl isr done
             int device_delay = delays[duration_intr-1];
+            //setting up random num gen to randomuze activity time 
+            std::random_device rd;
+            std::mt19937 gen(rd());
+            std::uniform_int_distribution<> dist(40, 200); // random ISR activity time between 40 and 200 ms
             while (device_delay > 0) {
-                int chunk = std::min(isr_activity_time, device_delay);
+                int chunk = dist(gen); // generate random chunk size
+                chunk = std::min(chunk, device_delay);
                 execution += std::to_string(current_time) + ", " + std::to_string(chunk) + ", ISR SYSCALL Activity\n";
                 current_time += chunk;
                 device_delay -= chunk;
@@ -63,10 +68,15 @@
             execution += execution_history;
             current_time = new_time;
 
-            // ISR Body Execution, each activty 40ms unitl isr done
+            // ISR Body Execution, each activty between 40ms-200ms unitl isr done
             int device_delay = delays[duration_intr-1];
+            //setting up random num gen to randomuze activity time 
+            std::random_device rd;
+            std::mt19937 gen(rd());
+            std::uniform_int_distribution<> dist(40, 200); // random ISR activity time between 40 and 200 ms
             while (device_delay > 0) {
-                int chunk = std::min(isr_activity_time, device_delay);
+                int chunk = dist(gen); // generate random chunk size
+                chunk = std::min(chunk, device_delay);
                 execution += std::to_string(current_time) + ", " + std::to_string(chunk) + ", ISR END_IO Activity\n";
                 current_time += chunk;
                 device_delay -= chunk;
