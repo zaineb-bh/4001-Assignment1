@@ -1,0 +1,76 @@
+0, 0, CPU burst
+0, 1, switch to kernel mode
+1, 10, context saved
+11, 1, find vector 9 in memory position 0x0012
+12, 1, load address 0X036C into the PC
+13, 78, ISR SYSCALL Activity
+91, 124, ISR SYSCALL Activity
+215, 121, ISR SYSCALL Activity
+336, 134, ISR SYSCALL Activity
+470, 142, ISR SYSCALL Activity
+612, 121, ISR SYSCALL Activity
+733, 95, ISR SYSCALL Activity
+828, 160, ISR SYSCALL Activity
+988, 25, ISR SYSCALL Activity
+1013, 1, IRET
+1014, 0, CPU burst
+1014, 1, switch to kernel mode
+1015, 10, context saved
+1025, 1, find vector 9 in memory position 0x0012
+1026, 1, load address 0X036C into the PC
+1027, 121, ISR END_IO Activity
+1148, 192, ISR END_IO Activity
+1340, 145, ISR END_IO Activity
+1485, 150, ISR END_IO Activity
+1635, 119, ISR END_IO Activity
+1754, 190, ISR END_IO Activity
+1944, 66, ISR END_IO Activity
+2010, 17, ISR END_IO Activity
+2027, 1, IRET
+2028, 0, CPU burst
+2028, 1, switch to kernel mode
+2029, 10, context saved
+2039, 1, find vector 14 in memory position 0x001C
+2040, 1, load address 0X0165 into the PC
+2041, 71, ISR SYSCALL Activity
+2112, 162, ISR SYSCALL Activity
+2274, 173, ISR SYSCALL Activity
+2447, 102, ISR SYSCALL Activity
+2549, 46, ISR SYSCALL Activity
+2595, 82, ISR SYSCALL Activity
+2677, 1, IRET
+2678, 0, CPU burst
+2678, 1, switch to kernel mode
+2679, 10, context saved
+2689, 1, find vector 14 in memory position 0x001C
+2690, 1, load address 0X0165 into the PC
+2691, 49, ISR END_IO Activity
+2740, 153, ISR END_IO Activity
+2893, 154, ISR END_IO Activity
+3047, 138, ISR END_IO Activity
+3185, 51, ISR END_IO Activity
+3236, 91, ISR END_IO Activity
+3327, 1, IRET
+3328, 0, CPU burst
+3328, 1, switch to kernel mode
+3329, 10, context saved
+3339, 1, find vector 11 in memory position 0x0016
+3340, 1, load address 0X01F8 into the PC
+3341, 134, ISR SYSCALL Activity
+3475, 181, ISR SYSCALL Activity
+3656, 68, ISR SYSCALL Activity
+3724, 108, ISR SYSCALL Activity
+3832, 63, ISR SYSCALL Activity
+3895, 10, ISR SYSCALL Activity
+3905, 1, IRET
+3906, 0, CPU burst
+3906, 1, switch to kernel mode
+3907, 10, context saved
+3917, 1, find vector 11 in memory position 0x0016
+3918, 1, load address 0X01F8 into the PC
+3919, 90, ISR END_IO Activity
+4009, 166, ISR END_IO Activity
+4175, 151, ISR END_IO Activity
+4326, 51, ISR END_IO Activity
+4377, 106, ISR END_IO Activity
+4483, 1, IRET

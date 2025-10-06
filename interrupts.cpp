@@ -8,6 +8,7 @@
  */
 
  #include <random>
+ #include <cmath>
  #include "interrupts.hpp"
 
  int main(int argc, char** argv) {
@@ -24,7 +25,8 @@
      /******************ADD YOUR VARIABLES HERE*************************/
     int current_time = 0;
     const int context_save_time = 10; 
-    const  int isr_activity_time = 40;
+    const int isr_activity_time = 40;
+    const float cpu_relative = CPU_SPEED / 100;
  
  
      /******************************************************************/
@@ -36,8 +38,8 @@
          /******************ADD YOUR SIMULATION CODE HERE*************************/
         if (activity == "CPU") {
             execution += std::to_string(current_time) + ", " +
-                        std::to_string(duration_intr) + ", CPU burst\n";
-            current_time += duration_intr;
+                        std::to_string(static_cast<int>(std::ceil(duration_intr*cpu_relative))) + ", CPU burst\n"; //made CPU bursts depend on speed
+            current_time += static_cast<int>(std::ceil(duration_intr*cpu_relative));
         }
         else if (activity == "SYSCALL") {
             auto [execution_history, new_time] = intr_boilerplate(current_time, duration_intr, 
